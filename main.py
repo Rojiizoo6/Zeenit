@@ -53,9 +53,8 @@ twitch_miner = TwitchChannelPointsMiner(
             disable_notification=True,                                              # Revoke the notification (sound/vibration)
         ),
         discord=Discord(
-            webhook_api="https://discord.com/api/webhooks/1258435703604379669/zVx8JosGVdQOAUwrgKTZBugXY7aI0Ac4Kl_eiVfwVcV5LTcjvRg9lqLurTSLpXtBy48s",  # Discord Webhook URL
-            events=[Events.BET_WIN, Events.BET_LOSE,
-                    Events.CHAT_MENTION,Events.GAIN_FOR_WATCH,Events.JOIN_RAID],                                  # Only these events will be sent to the chat
+            webhook_api="https://discord.com/api/webhooks/1293350259728187544/BQxUPnsnHb9fQsWOQImMMNnLv0fv8AxhMsXv7GHHYgvKtinh5bVHsJPa3MOP-hllJYql",  # Discord Webhook URL
+            events=[Events.CHAT_MENTION,Events.GAIN_FOR_WATCH,Events.JOIN_RAID],                                  # Only these events will be sent to the chat
         ),
         matrix=Matrix(
             username="twitch_miner",                                                   # Matrix username (without homeserver)
